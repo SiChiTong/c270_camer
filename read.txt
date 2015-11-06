@@ -1,0 +1,14 @@
+Test the Launch script and you code
+
+Start roscore in one terminal
+$ roscore
+
+Launch it
+$ roslaunch stitcher usbCameraLaunch.launch
+
+Wiew with image_wiew
+$ rosrun image_view image_view image:=/usb_cam/image_raw
+
+Start your application
+$ rosrun stitcher testcam
+You should see a window being created titled Image Processed containing the inverted image from the webcam
